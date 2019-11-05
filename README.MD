@@ -18,5 +18,5 @@ GOOGLE_APPLICATION_CREDENTIALS=selfmailbot-884932132121.json
 TELEGRAM_TOKEN=7997:A-rFdCk_15BQQWao
 TELEGRAM_PROXY=HTTP://207.154.200.199:3128
 ```
-TELEGRAM_PROXY is optional variable. Use it if you hav troubles in direct
-connections to Telegram API
+TELEGRAM_PROXY is optional variable. Use it if you have troubles with
+direct connections to Telegram API
