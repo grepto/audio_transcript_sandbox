@@ -9,7 +9,7 @@ from helpers import get_file
 
 env.read_envfile()
 
-logging.basicConfig(level=logging.DEBUG,
+logging.basicConfig(level=logging.ERROR,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
