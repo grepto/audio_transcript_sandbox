@@ -12,10 +12,6 @@ env.read_envfile()
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-REQUEST_KWARGS = {
-    'proxy_url': env('TELEGRAM_PROXY'),
-}
-
 
 def start(update, context):
     update.message.reply_text('Hi!')
@@ -38,7 +34,7 @@ def send_voice(bot, update):
     update.message.reply_text(voice_text)
 
 
-updater = Updater(token=env('TELEGRAM_TOKEN'), request_kwargs=REQUEST_KWARGS)
+updater = Updater(token=env('TELEGRAM_TOKEN'))
 dispatcher = updater.dispatcher
 
 dispatcher.add_handler(CommandHandler('start', start))
