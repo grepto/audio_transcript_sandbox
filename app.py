@@ -13,11 +13,11 @@ logging.basicConfig(level=logging.ERROR,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
-def start(update, context):
+def start(bot, update):
     update.message.reply_text('Hi!')
 
 
-def help(update, context):
+def help(bot, update):
     update.message.reply_text('Help!')
 
 
